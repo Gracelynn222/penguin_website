@@ -1,0 +1,705 @@
+General Styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004466;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #004466;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002233;
+    color: white;
+}
+h1 {
+    color: black;
+}
+p{
+    color: black;
+}
+h2{
+    text-align: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Hero Section - Fullscreen */
+.hero {
+    height: 100vh; /* Full screen height */
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #f4a261;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e76f51;
+}
+
+/* Services Section */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.service-card {
+    width: 300px;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+}
+/* Fix for navbar overlapping content */
+body {
+    padding-top: 80px; /* Adjust this value based on navbar height */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px; /* Define a specific height */
+}
+
+/* Adjust the bridal-car section */
+.bridal-car {
+    padding: 20px;
+    text-align: center;
+}
+/* Remove bullets from lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+Align dropdown to the left
+.dropdown-container {
+    text-align: left; /* Align text inside */
+    margin-bottom: 10px; /* Add spacing */
+}
+
+.dropdown-container select {
+    width: 200px; /* Adjust width */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.fleet {
+    display: flex;
+    justify-content: center; /* Center align images */
+    gap: 20px; /* Add spacing between images */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.fleet img {
+    width: 30%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Prevents images from becoming too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: black;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    width: 0%;
+    padding: 20 px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+/* Footer Fix */
+footer {
+    background: #00283a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+/* Dropdown Styles */
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    display: none;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #555;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #666;
+}
+
+/* Show dropdown on hover (Desktop) */
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Responsive Mobile Dropdown */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+}
+/* Responsive Images */
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.service-card {
+    background:rgb(255, 198, 92);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: black;
+    background-color: white;
+}
+
+.hero h1, .hero p {
+    margin: 0 0 20px;
+}
+.services-container {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.service-list li {
+    padding: 5px 0;
+}
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.portfolio img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+h2{
+    text-align: left;
+}
+h1{
+    text-align: center;
+}
+.furniture {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.collection img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.features li {
+    padding: 5px 0;
+}
+
+.auto-parts {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.parts-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.parts-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.features li {
+    padding: 5px 0;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.search-form input {
+    /* padding: 5px 10px; */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+
+}
+
+.search-form button:hover {
+    background: #555;
+}
+h5{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+/* Medium Circular Logo with Animation */
+.animated-logo {
+    width: 250px; /* Adjusted to medium size */
+    height: 250px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%; /* Circular shape */
+    border: 5px solid #fff; /* Optional: White border */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScale 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for Smooth Animation */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Service Cards */
+.service-card {
+    width: 280px;
+    text-align: center;
+    background: rgb(237, 177, 67);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Uniform Image Styling */
+.service-card img {
+    width: 100%; /* Ensures all images have the same width */
+    height: 180px; /* Ensures a consistent height */
+    object-fit: cover; /* Crops images to fit nicely */
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Animation */
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Image Fade-Up Animation */
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

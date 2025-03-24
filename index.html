@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Penguin - High-quality furniture services with customizable options. Explore our range of stylish and durable products.">
+    <meta name="keywords" content="furniture, home decor, interior design, custom furniture">
+    <meta name="author" content="Penguin Asia">
+    <title>Penguin Asia - Premium Furniture Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="penguin logo.png" alt="Penguin Logo" width="50px" height="50px">
+                <span class="company-name">Penguin Sales & Services Company</span>
+            </div>
+        
+          
+            <!-- Centered Search Bar with Icon on the Right -->
+<form class="search-form">
+    <input type="text" id="search-input" placeholder="Search services..." onkeyup="searchServices()">
+    <!-- <button type="submit"><img  alt="Search"></button> -->
+</form>
+
+        
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bridal-car.html">Bridal Car Services</a></li>
+                        <li><a href="towing-services.html">Towing Services 24/7</a></li>
+                        <li><a href="trucking-services.html">Trucking Services</a></li>
+                        <li><a href="heavy-equipment.html">Heavy Equipment Rental</a></li>
+                        <li><a href="construction.html">General Construction & Maintenance Services</a></li>
+                        <li><a href="furniture.html">Furniture Hotel & Residential</a></li>
+                        <li><a href="auto-parts.html">Auto Parts</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#blog">Blog</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="home" class="hero">
+        <img src="penguin logo.png" alt="Penguin Logo" class="animated-logo">
+        <h1>Premium Services for Every Need</h1>
+        <p>Providing reliable solutions for homes, businesses, and transportation.</p>
+        <a href="#services" class="btn">Explore Our Services</a>
+    </section>
+    
+    
+    
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <div class="service-container" id="service-container">
+            <a href="bridal-car.html" class="service-card">
+                <img src="bridal car.webp" alt="Bridal Car Services">
+                <h3>Bridal Car Services</h3>
+                <p>Elegant and luxurious bridal car rentals for your special day.</p>
+            </a>
+            <a href="towing-services.html" class="service-card">
+                <img src="towing.avif" alt="Towing Services">
+                <h3>Towing Services 24/7</h3>
+                <p>Reliable and fast towing services available anytime.</p>
+            </a>
+            <a href="trucking.html" class="service-card">
+                <img src="tracking.avif" alt="Trucking Services">
+                <h3>Trucking Services</h3>
+                <p>Efficient and safe transportation for your goods.</p>
+            </a>
+            <a href="heavy-equipment.html" class="service-card" width="50px" height="50px">
+                <img src="heavy.avif" alt="Heavy Equipment Rental">
+                <h3>Heavy Equipment Rental</h3>
+                <p>High-quality heavy equipment for construction and industrial needs.</p>
+            </a>
+            <a href="construction.html" class="service-card">
+                <img src="cos.avif" alt="General Construction & Maintenance">
+                <h3>General Construction & Maintenance Services</h3>
+                <p>Expert solutions for residential and commercial projects.</p>
+            </a>
+            <a href="furniture.html" class="service-card">
+                <img src="furniture.avif" alt="Furniture Hotel & Residential">
+                <h3>Furniture Hotel & Residential</h3>
+                <p>Stylish and durable furniture for homes and hotels.</p>
+            </a>
+            <a href="auto-parts.html" class="service-card">
+                <img src="auto.jpg" alt="Auto Parts">
+                <h3>Auto Parts</h3>
+                <p>High-quality auto parts for various vehicle models.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Penguin Asia | Designed with care</p>
+    </footer>
+
+    <script>
+        function searchServices() {
+            let input = document.getElementById('search-input').value.toLowerCase();
+            let serviceCards = document.querySelectorAll('.service-card');
+
+            serviceCards.forEach(card => {
+                let title = card.querySelector('h3').textContent.toLowerCase();
+                let description = card.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(input) || description.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
