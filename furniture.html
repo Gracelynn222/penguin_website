@@ -7,6 +7,77 @@
     <meta name="author" content="Penguin Asia">
     <title>Furniture for Hotels & Residential - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-list {
+        list-style-type: disc; /* Adds bullet points */
+        max-width: 600px;
+        margin-left: 20px; /* Adjusts indentation */
+        padding-left: 20px;
+        text-align: left; /* Aligns text to the left */
+    }
+    
+    .service-list li {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .why-choose-us {
+        text-align: left; /* Aligns heading to the left */
+        margin-left: 20px; /* Matches the list indentation */
+    }
+      /* Container for image section */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f89c1c; /* Orange background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for images */
+.image-container img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 3s ease-in-out;
+    animation: fadeInScale 3s forwards;
+}
+
+/* Hover effect */
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+.book-now-container {
+    text-align: right; /* Align everything to the right */
+    margin-right: 20px;
+}
+
+.book-now-title {
+    color: #e65c00;
+    text-align: right; /* Ensure "Book Now" is also aligned */
+}
+ /* Responsive Design */
+ @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-list {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,18 +107,20 @@
     </header>
 
     <section class="furniture">
-        <h1>Furniture for Hotels & Residential</h1>
+        <h1>Furniture for Hotels & Residential</h1><br>
         <p>Upgrade your space with our premium-quality furniture for hotels, residential homes, and commercial establishments. Our stylish and durable designs enhance comfort and elegance.</p><br>
         
-        <h1>Our Furniture Collection</h1>
-        <div class="collection">
+        <div class="our-services-container">
+            <h1 class="our-services">Our Furniture Collection</h1>
+        </div>
+        <div class="image-container">
             <img src="furniture1.avif" alt="Luxury Sofa Set">
             <img src="furniture2.avif" alt="Elegant Dining Table">
             <img src="furniture3.avif" alt="Modern Bedroom Set">
-        </div>
+        </div><br>
 
-       <h1>Why Choose Us?</h1>
-        <ul class="features">
+        <h1 class="why-choose-us">Why Choose Us?</h1>
+        <ul class="service-list">
             <li>Premium quality materials</li>
             <li>Custom designs available</li>
             <li>Durability and comfort</li>
@@ -55,10 +128,12 @@
             <li>Suitable for hotels, homes, and offices</li>
         </ul>
 
-    <h1>Book Now</h1>
-        <p>Contact us today to furnish your space with elegance and quality.</p>
-        <p><strong>Please contact for inquiries: <a href="tel:09230868342">(0923) 086 8342</a></strong></p><br>
-        <a href="contact.html" class="btn">Get a Quote</a>
+        <div class="book-now-container">
+            <h2 class="book-now-title">Book Now</h2>
+            <p>Contact us today for reliable trucking solutions.</p>
+            <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
     </section>
 
     <footer>

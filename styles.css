@@ -284,7 +284,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: gray;
+    background-color: #e65c00;
     color: white;
     position: fixed;
     width: 100%;
@@ -321,16 +321,42 @@ Align dropdown to the left
 .fleet {
     display: flex;
     justify-content: center; /* Center align images */
-    gap: 20px; /* Add spacing between images */
+    gap: 30px; /* Add more spacing between images */
     flex-wrap: wrap; /* Ensure responsiveness */
+    padding: 40px 20px; /* Add padding for spacing */
+    background-color: rgb(241, 170, 39); /* Light gray background */
+    border-radius: 10px; /* Soft edges */
 }
 
+/* Animation for images */
 .fleet img {
-    width: 30%; /* Adjust width for responsiveness */
-    max-width: 400px; /* Prevents images from becoming too large */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    width: 300px; /* Increased size */
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 3s forwards;
 }
+
+/* Hover effect */
+.fleet img:hover {
+    transform: scale(1.08); /* Slightly larger hover effect */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframe animation for fade-in and scale */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }  
+}
+
 /* Contact Info */
 .contact-info {
     text-align: center;
@@ -371,7 +397,7 @@ form {
 input, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -382,24 +408,22 @@ textarea {
 }
 
 button {
-    width: 0%;
-    padding: 20 px;
-    background: #ff6600;
+    background: #e65c00;
     color: white;
     border: none;
+    padding: 12px 15px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 18px;
+    width: 30%;
     border-radius: 5px;
-    transition: background 0.3s;
 }
-
 button:hover {
     background: #e65c00;
 }
 
 /* Footer Fix */
 footer {
-    background: #00283a;
+    background: #e65c00;
     color: white;
     text-align: center;
     padding: 20px;
@@ -545,6 +569,7 @@ h2{
 }
 h1{
     text-align: center;
+    color: #e65c00;
 }
 .furniture {
     text-align: center;
@@ -702,4 +727,60 @@ h4{
 @keyframes fadeUp {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+.our-services-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1.our-services {
+    font-weight: bold;
+    color:#e65c00; /* Adjust color as needed */
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px; /* Space between text and underline */
+}
+
+h1.our-services::after {
+    content: "";
+    display: block;
+    width: 100px; /* Adjust line width */
+    height: 3px;
+    background-color: #b35a00; /* Match text color */
+    margin: 5px auto 0; /* Centers the underline */
+}
+/* Hide the menu icon by default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #444;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
 }

@@ -7,6 +7,38 @@
     <meta name="author" content="Penguin Asia">
     <title>Towing Services - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+     .service-list {
+    list-style-type: disc; /* Adds bullet points */
+    max-width: 600px;
+    margin-left: 20px; /* Adjusts indentation */
+    padding-left: 20px;
+    text-align: left; /* Aligns text to the left */
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.why-choose-us {
+    text-align: left; /* Aligns heading to the left */
+    margin-left: 20px; /* Matches the list indentation */
+}
+.book-now-container {
+    text-align: right; /* Align everything to the right */
+    margin-right: 20px;
+}
+
+.book-now-title {
+    color: #e65c00;
+    text-align: right; /* Ensure "Book Now" is also aligned */
+}
+
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -36,17 +68,19 @@
     </header>
 
     <section class="towing-services">
-        <h1>Towing & Roadside Assistance</h1>
+        <h1>Towing & Roadside Assistance</h1><br>
         <h5>Stranded on the road? Our reliable towing services are available to assist you anytime, anywhere.</h5><br>
         
-        <h1>Our Services</h1>
+        <div class="our-services-container">
+            <h1 class="our-services">Our Services</h1>
+        </div>
         <div class="fleet">
             <img src="towing-6131a67c5551e.jpg" alt="Flatbed Tow Truck">
             <img src="towing.avif" alt="Heavy-Duty Towing">
             <img src="Tow-Truck-Accidents.jpg" alt="Roadside Assistance Vehicle">
-        </div>
+        </div><br>
 
-       <h1>Why Choose Us?
+        <h1 class="why-choose-us">Why Choose Us?</h1>
         <ul class="service-list">
             <li>24/7 emergency towing services</li>
             <li>Fast and reliable roadside assistance</li>
@@ -54,12 +88,14 @@
             <li>Heavy-duty towing for larger vehicles</li>
             <li>Affordable rates with no hidden charges</li>
         </ul>
-    </h1>
 
-        <h2>Book Now</h2>
-        <p>Contact us today for fast and reliable towing services.</p>
-        <p><strong>For immediate assistance, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
-        <a href="contact.html" class="btn">Get Assistance</a>
+        <div class="book-now-container">
+            <h2 class="book-now-title">Book Now</h2>
+            <p>Contact us today for reliable trucking solutions.</p>
+            <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+        
     </section>
 
     <footer>

@@ -7,6 +7,36 @@
     <meta name="author" content="Penguin Asia">
     <title>Heavy Equipment Rental - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .why-rent {
+    color: #e65c00;
+    text-align: left; /* Aligns heading to the left */
+    margin-left: 20px; /* Matches the list indentation */ /* Targets only "Why Rent From Us?" */
+}
+.service-list {
+    list-style-type: disc; /* Adds bullet points */
+    max-width: 600px;
+    margin-left: 20px; /* Adjusts indentation */
+    padding-left: 20px;
+    text-align: left; /* Aligns text to the left */
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.book-now-container {
+    text-align: right; /* Align everything to the right */
+    margin-right: 20px;
+}
+
+.book-now-title {
+    color: #e65c00;
+    text-align: right; /* Ensure "Book Now" is also aligned */
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -36,17 +66,19 @@
     </header>
 
     <section class="heavy-equipment">
-        <h1>Heavy Equipment Rental Services</h1>
+        <h1>Heavy Equipment Rental Services</h1><br>
         <h5>Need reliable heavy equipment for your construction or industrial projects? We offer high-quality machinery for rent, ensuring efficiency and productivity.</h5><br>
         
-        <h1>Our Equipment Services</h1>
+        <div class="our-services-container">
+            <h1 class="our-services">Our Equipment Services</h1>
+        </div>
         <div class="fleet">
             <img src="heavy1.jpg" alt="Excavator">
             <img src="heav2.jpg" alt="Bulldozer">
             <img src="heav3.jpg" alt="Crane">
-        </div>
+        </div><br>
 
-        <h2>Why Rent From Us?</h2>
+        <h2 class="why-rent">Why Rent From Us?</h2>
         <ul class="service-list">
             <li>Well-maintained and high-performance machinery</li>
             <li>Flexible rental terms to suit your needs</li>
@@ -55,10 +87,13 @@
             <li>Available for short-term and long-term projects</li>
         </ul>
 
-        <h2>Book Now</h2>
-        <p>Contact us today for reliable and affordable heavy equipment rentals.</p>
-        <p><strong>For inquiries and reservations, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
-        <a href="contact.html" class="btn">Request a Quote</a>
+        <div class="book-now-container">
+            <h2 class="book-now-title">Book Now</h2>
+            <p>Contact us today for reliable trucking solutions.</p>
+            <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            <a href="contact.html" class="btn">Request a Quote</a>
+        </div>
+        
     </section>
 
     <footer>

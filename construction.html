@@ -7,6 +7,92 @@
     <meta name="author" content="Penguin Asia">
     <title>General Construction & Maintenance - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Container for image section */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f89c1c; /* Orange background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for images */
+.image-container img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 3s ease-in-out;
+    animation: fadeInScale 3s forwards;
+}
+
+/* Hover effect */
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Center align Contact Us section */
+.contact-section {
+    text-align: center;
+    max-width: 800px; /* Limits width for better readability */
+    margin: 0 auto; /* Centers the section */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Center align Contact Us heading */
+.contact-section h2 {
+    text-align: center;
+    color:orange; /* Keep the orange color */
+}
+
+/* Center the entire section */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Center the button */
+.contact-container .btn {
+    display: inline-block;
+    background-color: #f89c1c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.contact-container .btn:hover {
+    background-color: #e65c00;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-list {
+                text-align: center;
+            }
+        }
+
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -36,21 +122,29 @@
     </header>
 
     <section class="construction">
-        <h1>General Construction & Maintenance</h1>
-        <p>We provide top-quality construction and maintenance services for residential, commercial, and industrial projects. Our experienced team ensures durable and efficient structures built to last.</p><br>
+        <h1>General Construction & Maintenance</h1><br>
+        <p class="center-text">We deliver top-quality construction and maintenance for residential, commercial, and industrial projects, ensuring durable and efficient structures.</p><br>
         
-        <h1>Our Services</h1>
-        <div class="portfolio">
+        <div class="our-services-container">
+            <h1 class="our-services">Our Services</h1>
+        </div>
+        <div class="image-container">
             <img src="construct1.jpg" alt="Building Construction">
             <img src="construct2.jpg" alt="Road Development">
             <img src="construct3.jpg" alt="Industrial Site">
+        </div><br>
+
+
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-section">
+                <p>Let’s build something great together! Get in touch with us for your construction and maintenance needs.</p>
+                <p><strong>For inquiries and consultations, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            </div>
+            <a href="contact.html" class="btn">Request a Quote</a>
         </div>
+        
 
-
-        <h2>Contact Us</h2><br>
-        <p>Let’s build something great together! Get in touch with us for your construction and maintenance needs.</p>
-        <p><strong>For inquiries and consultations, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p><br>
-        <a href="contact.html" class="btn">Request a Quote</a>
     </section>
 
     <footer>

@@ -7,6 +7,37 @@
     <meta name="author" content="Penguin Asia">
     <title>Trucking Services - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .service-list {
+        list-style-type: disc; /* Adds bullet points */
+        max-width: 600px;
+        margin-left: 20px; /* Adjusts indentation */
+        padding-left: 20px;
+        text-align: left; /* Aligns text to the left */
+    }
+    
+    .service-list li {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .why-choose-us {
+        text-align: left; /* Aligns heading to the left */
+        margin-left: 20px; /* Matches the list indentation */
+    }
+    .book-now-container {
+    text-align: right; /* Align everything to the right */
+    margin-right: 20px;
+}
+
+.book-now-title {
+    color: #e65c00;
+    text-align: right; /* Ensure "Book Now" is also aligned */
+}
+
+</style>
+    
 </head>
 <body>
     <header>
@@ -36,7 +67,7 @@
     </header>
 
     <section class="trucking-services">
-        <h1>Trucking & Logistics Services</h1>
+        <h1>Trucking & Logistics Services</h1><br>
         <h4>We provide efficient and reliable trucking solutions to meet your logistics needs.</h4><br>
         
         <h1>Our Services</h1>
@@ -44,9 +75,9 @@
             <img src="track.avif" alt="Freight Truck">
             <img src="track2.avif" alt="Heavy Duty Truck">
             <img src="track 3.avif" alt="Logistics Vehicle">
-        </div>
+        </div><br>
 
-        <h2>Why Choose Us?</h2>
+        <h1 class="why-choose-us">Why Choose Us?</h1>
         <ul class="service-list">
             <li>Full Truckload (FTL) & Less Than Truckload (LTL) services</li>
             <li>Timely and secure deliveries</li>
@@ -55,10 +86,15 @@
             <li>Competitive pricing and reliable customer support</li>
         </ul>
 
-        <h2>Book Now</h2>
-        <p>Contact us today for reliable trucking solutions.</p>
-        <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
-        <a href="contact.html" class="btn">Get a Quote</a>
+        <div class="book-now-container">
+            <h2 class="book-now-title">Book Now</h2>
+            <p>Contact us today for reliable trucking solutions.</p>
+            <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+        
+        
+        
     </section>
 
     <footer>

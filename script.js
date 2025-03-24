@@ -70,4 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
             servicesDropdown.appendChild(listItem);
         });
     }
-});
+})
+function toggleMenu() {
+    let navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+};

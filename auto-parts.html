@@ -7,6 +7,86 @@
     <meta name="author" content="Penguin Asia">
     <title>Auto Parts - Penguin Asia</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+          /* Container for image section */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f89c1c; /* Orange background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for images */
+.image-container img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 3s ease-in-out;
+    animation: fadeInScale 3s forwards;
+}
+
+/* Hover effect */
+.image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-list {
+                text-align: center;
+            }
+        }
+        .service-list {
+        list-style-type: disc; /* Adds bullet points */
+        max-width: 600px;
+        margin-left: 20px; /* Adjusts indentation */
+        padding-left: 20px;
+        text-align: left; /* Aligns text to the left */
+    }
+    
+    .service-list li {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .why-choose-us {
+        text-align: left; /* Aligns heading to the left */
+        margin-left: 20px; /* Matches the list indentation */
+    }
+    .book-now-container {
+    text-align: right; /* Align everything to the right */
+    margin-right: 20px;
+}
+
+.book-now-title {
+    color: #e65c00;
+    text-align: right; /* Ensure "Book Now" is also aligned */
+}
+footer {
+    background-color: #e65c00; /* Orange background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Adds padding */
+    width: 100%; /* Ensures full width */
+}
+
+
+    </style>
 </head>
 <body>
     <header>
@@ -36,18 +116,20 @@
     </header>
 
     <section class="auto-parts">
-        <h1>Auto Parts</h1>
+        <h1>Auto Parts</h1><br>
         <p>Find high-quality auto parts for all types of vehicles. We offer a wide selection of genuine and aftermarket parts to keep your car running smoothly.</p><br>
         
-        <h1>Our Services</h1>
-        <div class="parts-gallery">
+        <div class="our-services-container">
+            <h1 class="our-services">Our Services</h1>
+        </div>
+        <div class="image-container">
             <img src="auto1.avif" alt="Brake Pads">
             <img src="auto2.avif" alt="Car Battery">
             <img src="auto3.avif" alt="Engine Oil">
-        </div>
+        </div><br>
 
-         <h1>Why Choose Us? </h1>
-        <ul class="features">
+        <h1 class="why-choose-us">Why Choose Us?</h1>
+        <ul class="service-list">
             <li>Genuine and aftermarket auto parts</li>
             <li>Affordable pricing</li>
             <li>High-quality and durable components</li>
@@ -55,11 +137,12 @@
             <li>Expert customer support</li>
         </ul><br>
 
-         <h1>Contact us</h1>
-        <p>Contact us today for inquiries or to place an order.</p>
-        <p><strong>Please contact for assistance: <a href="tel:09230868342">(0923) 086 8342</a></strong></p><br>
-        <a href="contact.html" class="btn">Get a Quote</a>
-    </section>
+        <div class="book-now-container">
+            <h2 class="book-now-title">Book Now</h2>
+            <p>Contact us today for reliable trucking solutions.</p>
+            <p><strong>For bookings, call: <a href="tel:09230868342">(0923) 086 8342</a></strong></p>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
 
     <footer>
         <p>&copy; 2025 Penguin Asia | Designed with care</p>
